@@ -1,0 +1,426 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face{
+    font-family:Madrigal;
+    src:url("./font/madrigal/Madrigal.ttf");
+    
+}
+body {
+    background-image: url(./images/wp12131272-encanto-all-of-you-wallpapers.jpg);
+    background-size: 100%;
+    font-family:Madrigal;
+    
+}
+header{
+    
+    color: aquamarine;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0,0,0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(254, 193, 149,0.7);
+
+}
+h1,legend,h3{
+  background: #82AC59;
+background: linear-gradient(to bottom, #82AC59 0%, #36577B 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+main{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+}
+
+section{
+  color: #82AC59;
+  background: rgba(0, 0,0,0.4);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(254, 193, 149,0.7);
+width: 77%;
+border-radius: 10px;
+padding: 20px;
+margin:auto;
+
+
+}
+
+form{
+    color: white;
+    background: rgba(0, 0,0,0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(254, 193, 149,0.7);
+width: 77%;
+border-radius: 10px;
+padding: 20px;
+margin:auto;
+display: none;
+}
+
+form fieldset{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-around;
+    height: 350px;
+}
+
+form fieldset legend{
+  font-size:xx-large;
+}
+
+form fieldset:not(:first-of-type){
+    display: none;
+}
+
+form button:last-of-type{
+  display: none;
+}
+
+
+
+form #btn{
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+
+
+
+
+button {
+    position: relative;
+    padding: 12px 35px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 3px solid #fec195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+
+
+
+
+  /* From Uiverse.io by Yaya12085 */ 
+
+.radio-input:checked + .radio-tile {
+  color: #fec195;
+  border-color: #fec195;
+  box-shadow: 0 0 0 #fec1958c;
+  
+  background-color: transparent;
+}
+
+.radio-input:checked + .radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: #fec195;
+  border-color: #fec195;
+}
+
+.radio-input:checked + .radio-tile .radio-icon svg {
+  fill: #fec195;
+}
+
+.radio-input:checked + .radio-tile .radio-label {
+  
+  background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+}
+
+.radio-input:focus + .radio-tile {
+  border-color:#fec195; 
+  box-shadow: 0 0 25px #fec1958c;
+
+}
+
+.radio-input:focus + .radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  min-height: 100px;
+  border-radius: 0.5rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fec195;
+  box-shadow: 0 5px 10px #fec1958c;
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+  color: #f1f1f1;
+}
+
+.radio-tile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+}
+
+.radio-tile:hover {
+  border-color: #fec195;
+
+}
+
+
+.radio-tile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-icon svg {
+  width: 2rem;
+  height: 2rem;
+  
+}
+
+.radio-label {
+  color: #f1f1f1;
+  transition: 0.375s ease;
+  text-align: center;
+  font-size: 13px;
+}
+
+.radio-input {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+/* General styles (default for larger screens) */
+
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+ main{
+  margin: 0 auto;
+  width: 90%;
+ }
+
+ body{
+  background-position-x: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  fieldset{
+  padding-block: 20px;
+  height: 500px;
+  }
+  body{
+    background-position-x: right ;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   button{
+    margin-top: 90px;
+   }
+}
+
+footer {
+  color: aquamarine;
+  display: flex;
+  background: rgba(0, 0,0,0.4);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(254, 193, 149,0.7);
+}
+.footer-section1 { 
+  margin-right: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.footer-section2 {
+  margin-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+
+

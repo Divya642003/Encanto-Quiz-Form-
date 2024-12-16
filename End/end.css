@@ -1,0 +1,36 @@
+
+span{
+    display: block;
+    text-align: center;
+    margin: 25px;
+    background: #82AC59;
+    background: linear-gradient(to bottom, #82AC59 0%, #36577B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+h2{
+    background: #82AC59;
+    background: linear-gradient(to bottom, #82AC59 0%, #36577B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+    display: block;
+    width: 90%;
+    height:400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 20px auto;
+    
+}
+
+@media screen and (max-width: 480px) {
+    img{
+        height: 150px;
+    }
+}
