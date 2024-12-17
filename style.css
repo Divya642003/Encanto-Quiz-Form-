@@ -398,29 +398,26 @@ button {
    button{
     margin-top: 90px;
    }
+
+   footer{
+    flex-direction: column;
+   }
+   footer h3{
+    padding-top: 10px;
+   }
 }
 
 footer {
   color: aquamarine;
-  display: flex;
+  display:flex;
   background: rgba(0, 0,0,0.4);
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   border: 2px solid rgba(254, 193, 149,0.7);
+  padding: 10px;
 }
-.footer-section1 { 
-  margin-right: 40%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.footer-section2 {
-  margin-right: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
   
-}
 
 
 
